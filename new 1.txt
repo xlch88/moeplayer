@@ -1,26 +1,49 @@
 moeplayer
-	- init(config)
+	vars:
+		- audio = new Auido 
+		- video = document.createElement("VIDEO")
 	
-moeplayer.audio = new Auido
-moeplayer.video = document.createElement("VIDEO")
-
-moeplayer.list
 	methods:
-		- get(listId)	return listInfo
-		- add(listId)	return listId
-		- delete		return true
-		- getMusic		return 
-		- addMusic		
-		- deleteMusic
+		- init(config)
 	
 	events:
-		- add
-		- delete
-		- change
+		- inited		-> callback(config)
+	
+moeplayer.list
+	vars:
+		- store
+
+	methods:
+		- add(listInfo)							return listId
+		- delete(listId)						return boolean
+		- addMusic(listId, musicObjectArray)	return boolean
+		- deleteMusic(listId, musicId)			return boolean
+	
+	events:
+		- add			-> callback(listId, listInfo)
+		- delete		-> callback(listId, listInfo)
+		- addMusic		-> callback(listId, oldListInfo, newListInfo, newMusics)
+		- deleteMusic	-> callback(listId, oldListInfo, newListInfo, musicId)
 
 moeplayer.controller
+	vars:
+		- nowElement
+
 	methods:
-		- play
-		- pause
-		- set
+		- play()
+		- pause()
+		- setMusic()
+		- setPlayType()
+		- next()
+		- last()
+		
+		- muted()
+		- volume()
+		- time()
+		- src()
+		- playbackRate()
 	
+	events:
+		- end
+		- next
+		- error
