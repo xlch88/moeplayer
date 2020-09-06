@@ -1,0 +1,26 @@
+moeplayer
+	- init(config)
+	
+moeplayer.audio = new Auido
+moeplayer.video = document.createElement("VIDEO")
+
+moeplayer.list
+	methods:
+		- get(listId)	return listInfo
+		- add(listId)	return listId
+		- delete		return true
+		- getMusic		return 
+		- addMusic		
+		- deleteMusic
+	
+	events:
+		- add
+		- delete
+		- change
+
+moeplayer.controller
+	methods:
+		- play
+		- pause
+		- set
+	
