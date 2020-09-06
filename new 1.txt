@@ -44,6 +44,7 @@ moeplayer.controller
 		- playbackRate()
 	
 	events:
-		- end
-		- next
-		- error
+		- playStatus	-> callback(status = ['loading', 'playing', 'pause'])
+		- end			-> callback()
+		- next			-> callback()
+		- error			-> callback(error)
