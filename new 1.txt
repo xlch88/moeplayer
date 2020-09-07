@@ -44,7 +44,28 @@ moeplayer.controller
 		- playbackRate()
 	
 	events:
+		- playing		-> callback(time, percent)
+		- loading		-> callback(percent)
+		- elementChange	-> callback(oldElement, newElement)
 		- playStatus	-> callback(status = ['loading', 'playing', 'pause'])
 		- end			-> callback()
 		- next			-> callback()
 		- error			-> callback(error)
+		
+moeplayer.musicParser
+	vars:
+		- parsers
+	
+	methods:
+		- add(name, func)
+		
+moeplayer.captions.parser.lrc
+	methods:
+		- load
+
+moeplayer.captions
+	vars:
+		- now
+		
+	methods:
+		- load(parser)
