@@ -2,10 +2,10 @@ moeplayer
 	vars:
 		- audio = new Auido 
 		- video = document.createElement("VIDEO")
-	
+
 	methods:
 		- init(config)
-	
+
 	events:
 		- inited		-> callback(config)
 	
@@ -18,7 +18,7 @@ moeplayer.list
 		- delete(listId)						return boolean
 		- addMusic(listId, musicObjectArray)	return boolean
 		- deleteMusic(listId, musicId)			return boolean
-	
+
 	events:
 		- add			-> callback(listId, listInfo)
 		- delete		-> callback(listId, listInfo)
