@@ -1,0 +1,51 @@
+{
+  "id": "2113550",
+  "name": "moeplayer",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14318518",
+      "name": "音量大",
+      "font_class": "sound-max",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "14318521",
+      "name": "音量小",
+      "font_class": "sound-min",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3443559",
+      "name": "播放",
+      "font_class": "play",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3350799",
+      "name": "上一首",
+      "font_class": "right",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "17541872",
+      "name": "上一首",
+      "font_class": "left",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "1040565",
+      "name": "暂停",
+      "font_class": "pause",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    }
+  ]
+}

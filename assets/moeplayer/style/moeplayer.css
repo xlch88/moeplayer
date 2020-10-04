@@ -10,64 +10,181 @@ body {
     height: 210px;
     backdrop-filter: blur(30px);
     background: rgb(255 255 255 / 50%);
+    margin-top: -105px;
+    margin-left: -160px;
+    border-radius: 10px;
 }
 
-.moeplayer .music-info {
+.moeplayer, .moeplayer * {
+    box-sizing: border-box;
 }
 
-.moeplayer .music-info .album {
+.moeplayer p {
+    padding: 0;
+    margin: 0;
 }
 
-.moeplayer .music-info .album img {
+.moeplayer >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    padding-bottom: 0;
 }
 
-.moeplayer .music-info .music-info-list {
+.moeplayer>.music-info {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.moeplayer .music-info .music-info-list p.from {
+.moeplayer>.music-info .album {
+    position: absolute;
+    width: 60px;
+    font-size: 0px;
 }
 
-.moeplayer .music-info .music-info-list p.title {
+.moeplayer>.music-info .album img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-.moeplayer .music-info .music-info-list p.subtitle {
+.moeplayer>.music-info .music-info-list {
+    padding-left: 70px;
+    height: 60px;
 }
 
-.moeplayer .percent {
+.moeplayer>.music-info .music-info-list p.from {
+    color: rgb(0 0 0 / 0.5);
+    font-size: 12px;
+    margin-bottom: 3px;
 }
 
-.moeplayer .percent .progress {
+.moeplayer>.music-info .music-info-list p.title {
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.moeplayer .percent .progress .now {
+.moeplayer>.music-info .music-info-list p.subtitle {
+    font-size: 14.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.moeplayer .percent .progress .preload {
+.moeplayer>.percent {
+    top: 80px;
+    height: 45px;
 }
 
-.moeplayer .percent .time {
+.moeplayer>.percent .progress {
+    height: 2px;
+    background: rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    font-size: 0px;
+    margin-bottom: 5px;
+    position: relative;
 }
 
-.moeplayer .controller {
+.moeplayer>.percent .progress >div {
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.moeplayer .controller .left {
+.moeplayer>.percent .progress .now {
+    background: #000;
 }
 
-.moeplayer .controller .play {
+.moeplayer>.percent .progress .now::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    height: 8px;
+    width: 8px;
+    background: #000;
+    border-radius: 50%;
+    top: -3px;
+    cursor: pointer;
 }
 
-.moeplayer .controller .right {
+.moeplayer>.percent .progress .preload {
+    background: rgb(0 0 0 / 0.4);
 }
 
-.moeplayer .volume {
+.moeplayer>.percent .time {
+    font-size: 13px;
 }
 
-.moeplayer .volume .min {
+.moeplayer>.percent .time span:nth-child(1) {
+    float: left;
 }
 
-.moeplayer .volume .max {
+.moeplayer>.percent .time span:nth-child(2) {
+    float: right;
 }
 
-.moeplayer .volume .progress {
+.moeplayer>.controller {
+    top: calc(80px + 28px);
+    font-size: 0;
 }
+
+.moeplayer>.controller >div {
+    display: inline-block;
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 0;
+}
+
+.moeplayer>.controller >div i {
+    font-size: 20px;
+}
+
+.moeplayer>.controller .left {
+}
+
+.moeplayer>.controller .play {
+}
+.moeplayer>.controller .play i{
+	font-size: 25px;
+}
+
+.moeplayer>.controller .right {
+}
+
+.moeplayer>.volume {
+    top: calc(80px + 45px + 48px);
+    height: 25px;
+    padding: 0;
+}
+
+.moeplayer>.volume .icon {position: absolute;width: 25px;height: 25px;}
+
+.moeplayer>.volume .icon i {font-size: 23px;}
+
+.moeplayer>.volume .min {left: 20px;}
+
+.moeplayer>.volume .max {right: 20px;}
+
+.moeplayer>.volume .progress {width: calc(100% - 50px - 40px - 30px);height: 2px;position: absolute;left: calc(25px + 20px + (30px / 2));margin-top: calc(25px / 2 - 1px);background: rgb(0 0 0 / 0.4);}
+.moeplayer>.volume .progress .percent{position: absolute;top: 0;left: 0;height: 2px;background: #000;}
+.moeplayer>.volume .progress .percent::after{
+	content:'';
+	position: absolute;
+	right: 0px;
+	top: -5px;
+	height: 12px;
+	width: 12px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0px 2.5px 5px rgb(0 0 0 / 0.5);
+}
+

@@ -7,42 +7,46 @@
 		<title>MoePlayer !</title>
 		
 		<link rel="stylesheet" href="assets/moeplayer/style/moeplayer.css"/>
+		<link rel="stylesheet" href="assets/vendor/iconfont/iconfont.css"/>
 		<script type="text/javascript" src="assets/moeplayer/js/moeplayer.js"></script>
 	</head>
 	<body>
 		<div class="moeplayer">
 			<div class="music-info">
 				<div class="album">
-					<img src="">
+					<img src="assets/album.png">
 				</div>
 				
 				<div class="music-info-list">
-					<p class="from"></p>
-					<p class="title"></p>
-					<p class="subtitle"></p>
+					<p class="from">网易云音乐</p>
+					<p class="title">绯色月下、狂咲ノ絶</p>
+					<p class="subtitle">深く朱き潤む瞳 甘い色のスカート揺らす</p>
 				</div>
 			</div>
 			
 			<div class="percent">
 				<div class="progress">
-					<div class="now"></div>
-					<div class="preload"></div>
+					<div class="preload" style="width:80%"></div>
+					<div class="now" style="width:50%"></div>
 				</div>
-				<div class="time"></div>
+				<div class="time">
+					<span>01:59</span>
+					<span>06:23</span>
+				</div>
 			</div>
 			
 			<div class="controller">
-				<div class="left"></div>
-				<div class="play"></div>
-				<div class="right"></div>
+				<div class="left"><i class="iconfont icon-left"></i></div>
+				<div class="play"><i class="iconfont icon-pause"></i></div>
+				<div class="right"><i class="iconfont icon-right"></i></div>
 			</div>
 			
 			<div class="volume">
-				<div class="min"></div>
+				<div class="icon min"><i class="iconfont icon-sound-min"></i></div>
 				<div class="progress">
-					
+					<div class="percent" style="width:50%"></div>
 				</div>
-				<div class="max"></div>
+				<div class="icon max"><i class="iconfont icon-sound-max"></i></div>
 			</div>
 		</div>
 	</body>
