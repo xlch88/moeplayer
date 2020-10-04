@@ -1,0 +1,73 @@
+body {
+    background: url('../../background.jpg')
+}
+
+.moeplayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 310px;
+    height: 210px;
+    backdrop-filter: blur(30px);
+    background: rgb(255 255 255 / 50%);
+}
+
+.moeplayer .music-info {
+}
+
+.moeplayer .music-info .album {
+}
+
+.moeplayer .music-info .album img {
+}
+
+.moeplayer .music-info .music-info-list {
+}
+
+.moeplayer .music-info .music-info-list p.from {
+}
+
+.moeplayer .music-info .music-info-list p.title {
+}
+
+.moeplayer .music-info .music-info-list p.subtitle {
+}
+
+.moeplayer .percent {
+}
+
+.moeplayer .percent .progress {
+}
+
+.moeplayer .percent .progress .now {
+}
+
+.moeplayer .percent .progress .preload {
+}
+
+.moeplayer .percent .time {
+}
+
+.moeplayer .controller {
+}
+
+.moeplayer .controller .left {
+}
+
+.moeplayer .controller .play {
+}
+
+.moeplayer .controller .right {
+}
+
+.moeplayer .volume {
+}
+
+.moeplayer .volume .min {
+}
+
+.moeplayer .volume .max {
+}
+
+.moeplayer .volume .progress {
+}
